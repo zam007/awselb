@@ -1,0 +1,41 @@
+# 忽略包
+ignored = ["golang.org/x/crypto"]
+
+# 项目元数据
+[metadata]
+homepage = "https://github.com/zam007/awselb"
+license = "MIT"
+owners_name_1 = "zam"
+owners_email_1 = "zam254227752@gmail.com"
+owners_homepage_1 = "https://github.com/zam007"
+
+
+# 必须包
+required = [
+"github.com/spf13/cobra",
+"github.com/sirupsen/logrus",
+"github.com/aws/aws-sdk-go",
+]
+
+
+# 约束条件cobra-命令行工具
+[[constraint]]
+  name = "github.com/spf13/cobra"
+  version = "0.0.3"
+  source = "github.com/spf13/cobra"
+
+# 约束条件logrus-日志工具
+[[constraint]]
+  name = "github.com/sirupsen/logrus"
+  version = "v1.0.5"
+  source = "github.com/sirupsen/logrus"
+
+# 约束条件aws-sdk-go日志工具
+[[constraint]]
+  name = "github.com/aws/aws-sdk-go"
+  version = "v1.14.3"
+  source = "github.com/aws/aws-sdk-go"
+
+[prune]
+  go-tests = true
+  unused-packages = true
