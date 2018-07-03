@@ -28,7 +28,7 @@ pipeline {
         stage('Checkout SourceCode') {
             steps {
                 echo 'Checking code out from git'
-                git credentialsId: '3479f8e4-ea9d-44cb-80ae-3b9f1058fbe6', url: 'https://code.tiejin.cn/zam/awselb.git'
+                git xxxxx
             }
         }
         
